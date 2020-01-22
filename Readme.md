@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Константин Перчаткин](https://up.htmlacademy.ru/htmlcss/27/user/1196185).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
