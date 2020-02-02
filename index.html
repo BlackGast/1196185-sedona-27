@@ -78,24 +78,28 @@
       </ol>
       </section>
       <section>
-        <h2>Заинтересовались?</h2>
+        <h1>Поиск гостиницы в Седоне</h1>
+        <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br> и  мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div>
+          <button>Поиск гостиницы в Седоне</button>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <fieldset>
+              <label for="date_in">Дата въезда:</label>
+              <input type="date" name="date_in" id="date_in" value="2017-04-24">
+              <label for="date_out">Дата выезда:</label>
+              <input type="date" name="date_out" id="date_out" value="2017-07-04">
+            </fieldset>
+            <fieldset>
+              <label for="adults">Взрослые:</label>
+              <input type="number" name="adults" id="adults" value="2">
+              <label for="child">Дети:</label>
+              <input type="number" name="child" id="child" value="0">
+            </fieldset>
+            <button type="submit">Найти</button>
+          </form>
+        </div>
       </section>
-      <div>
-        <button>Поиск гостиницы в Седоне</button>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <label for="date_in">Дата въезда:</label>
-          <input type="date" name="date_in" id="date_in" value="2017-04-24">
-          <label for="date_out">Дата выезда:</label>
-          <input type="date" name="date_out" id="date_out" value="2017-07-04">
-          <label for="adults">Взрослые:</label>
-          <input type="number" name="adults" id="adults" value="2">
-          <label for="child">Дети:</label>
-          <input type="number" name="child" id="child" value="0">
-          <button type="submit">Найти</button>
-        </form>
-      </div>
-      
       <div>
         <img src="img/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
         <!--Здесь будет форма-->        
