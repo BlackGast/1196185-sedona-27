@@ -30,7 +30,33 @@
             <h1>Гостиницы</h1>
             <section>
                 <h2>Фильтр гостиниц</h2>
-                <!--Здесь будет форма-->            
+                <form action="https://echo.htmlacademy.ru/courses" method="GET">
+                  <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <input type="checkbox" id="pool" name="pool" checked> 
+                    <label for="pool">Бассейн</label>
+                    <input type="checkbox" id="parking" name="parking"> 
+                    <label for="parking">Парковка</label>
+                    <input type="checkbox" id="wi-fi" name="wi-fi"> 
+                    <label for="wi-fi">WI-FI</label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <input type="checkbox" id="hotel" name="hotel" checked>
+                    <label for="hotel">Гостиница</label> 
+                    <input type="checkbox" id="motel" name="motel" checked>
+                    <label for="motel">Мотель</label>
+                    <input type="checkbox" id="apartments" name="apartments" checked>
+                    <label for="apartments">Апартаменты</label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Стоимость в сутки (р):</legend>
+                    <input type="text" name="cost-min" id="cost-min" value="От 0">
+                    <input type="text" name="cost-max" id="cost-max" value="До 3000">
+                    <input type="range" name="cost" id="cost" min="0" max="3500" step="1" value="3000">
+                    <input type="submit" value="Показать">
+                  </fieldset>
+                </form>
                 <p>Найдено 3:</p>
                 <p>Сортировать:</p>
                 <ul>
