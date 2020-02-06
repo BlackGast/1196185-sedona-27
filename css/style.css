@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    background-image: url('../img/background.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.mask {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+.site-navigation a {
+    color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.features {
+    background-color: white;
+}
+
+.features-list, 
+.features-list ul {
+    list-style: none;
+}
+
+.feature-item, 
+.features p {
+    text-align: center;
+}
+
+.features h1 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+.index-columns {
+    background-color: #81b3d2;
+    color: white;
+}
+
+.index-columns h2 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.index-columns-1 {
+    background-color: #eeeeee;
+}
+
+.index-columns-1 h2 {
+    color: black;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.appointment {
+    background-color: white;
+}
+
+.appointment p {
+    color: black;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.appointment .appointment-info {
+    color: #333333;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+} 
+
+.open-form {
+    background-color: #766357;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    border: none;
+}
+
+.open-form:hover {
+    background-color: #604e43;
+}
+
+.open-form:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.date {
+    border: none;
+}
+
+.quantity {
+    border: none;
+}
+
+.appointment-date,
+.appointment-quantity {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.appointment-date:hover,
+.appointment-quantity:hover {
+    background-color: #ebebeb;
+}
+
+.appointment-date:focus,
+.appointment-quantity:focus {
+    border: solid 2px #e5e5e5;
+    background-color: #ffffff;
+}
+
+.button-setup {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a9a9a9;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.button-search {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #81b3d2;
+    border: none;
+}
+
+.button-search:hover {
+    background-color: #669ec0;
+}
+
+.button-search:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
+.footer-contacts {
+    color: black;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-social a {
+    background-color: #81b3d2;
+}
+
+.footer-social a:hover {
+    background-color: #669ec0;
+}
+
+.footer-social a:active {
+    background-color: #5496bd;
+    
+}
+
+.footer-social a:active .tw {
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+
+.footer-social a:active .fb {
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+
+.footer-social a:active .yt {
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+.footer-copyright:hover {
+    color: #81b3d2;
+}
+
+.footer-copyright:active {
+    color: #000000;
+}
+
+.footer-copyright svg {
+    fill: #231f20;
+    width: 115px;
+    height: 41px;
+}
+
+.footer-copyright:hover svg {
+    fill: #81b3d2;
+}
+
+.footer-copyright:active svg {
+    fill: #bdbbbc;
+}
