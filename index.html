@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="index">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -38,7 +38,7 @@
         <p>
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
-      <ol class="features-list">
+      <ol class="features-list list">
         <li class="feature-item">
           <div class="index-columns">
             <h2>Настоящий городок</h2>
@@ -47,7 +47,7 @@
             <img src="img/town.jpg" width="800" height="256" alt="Фото городка">            
           </div>
           <div class="features-list-town">
-            <ul>
+            <ul class="list">
               <li>
                 <img src="img/icon-1.svg" width="75" height="72" alt="Иконка жилья">
                 <h3>Жильё</h3>
@@ -75,21 +75,21 @@
           </div>
         </li>
         <li class="feature-item">
-          <div class="index-columns-1">
+          <div class="index-columns-row">
             <h2>Небольшая площадь</h2>
             <span>-№3-</span>
             <p>Все достопримечательности находятся близко</p>
           </div>
         </li>
         <li class="feature-item">
-          <div class="index-columns-1">
+          <div class="index-columns-row">
             <h2>Красивая дорога</h2>
             <span>-№4-</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="feature-item">
-          <div class="index-columns-1">
+          <div class="index-columns-row">
             <h2>Мало туристов</h2>
             <span>-№5-</span>
             <p>Большинство едет в Гранд Каньон и толпиться там</p>
@@ -107,19 +107,19 @@
             <fieldset class="date">
               <legend class="visually-hidden">Даты въезда и выезда</legend>
               <label class="appointment-date-text" for="date_in">Дата въезда:</label>
-              <input class="appointment-date" type="text" name="date_in" id="date_in" value="24 апреля 2017">
+              <input class="appointment-date appointment-field" type="text" name="date_in" id="date_in" value="24 апреля 2017">
               <label class="appointment-date-text" for="date_out">Дата выезда:</label>
-              <input class="appointment-date" type="text" name="date_out" id="date_out" value="04 июля 2017">
+              <input class="appointment-date appointment-field" type="text" name="date_out" id="date_out" value="04 июля 2017">
             </fieldset>
             <fieldset class="quantity">
               <legend class="visually-hidden">Количество взрослых и детей</legend>
               <label class="appointment-quantity-text" for="adults">Взрослые:</label>
               <button class="button-setup" type="button">+</button>
-              <input class="appointment-quantity" type="number" name="adults" id="adults" value="2">
+              <input class="appointment-quantity appointment-field" type="number" name="adults" id="adults" value="2">
               <button class="button-setup" type="button">-</button>
               <label class="appointment-quantity-text" for="child">Дети:</label>
               <button class="button-setup" type="button">+</button>
-              <input class="appointment-quantity" type="number" name="child" id="child" value="0">
+              <input class="appointment-quantity appointment-field" type="number" name="child" id="child" value="0">
               <button class="button-setup" type="button">-</button>
             </fieldset>
             <button class="button-search" type="submit">Найти</button>
@@ -138,9 +138,9 @@
       </p>
       
         <ul class="footer-social">
-          <li> <a href="#"><img class="tw" src="img/tw-icon.svg" width="17" height="15" alt="Твиттер"></a> </li>
-          <li> <a href="#"><img class="fb" src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук"></a> </li>      
-          <li> <a href="#"><img class="yt" src="img/youtube-icon.svg" width="20" height="16" alt="Ютуб"></a> </li>  
+          <li> <a class="a-twitter" href="#"><img class="twitter" src="img/tw-icon.svg" width="17" height="15" alt="Твиттер"></a> </li>
+          <li> <a class="a-facebook" href="#"><img class="facebook" src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук"></a> </li>      
+          <li> <a class="a-youtube" href="#"><img class="youtube" src="img/youtube-icon.svg" width="20" height="16" alt="Ютуб"></a> </li>  
         </ul>
       
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">

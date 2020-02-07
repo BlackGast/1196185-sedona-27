@@ -9,13 +9,32 @@ body {
     text-transform: uppercase;
 
     background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}   
+
+.index {
     background-image: url('../img/background.jpg');
     background-position: top center;
     background-repeat: no-repeat;
-}
-
-.visually-hidden {
-    visibility: hidden;
 }
 
 .mask {
@@ -30,18 +49,14 @@ body {
     margin-right: auto
 }
 
-a {
-    text-decoration: none;
-}
-
 .main-navigation {
-    font-weight: bold;
-    color: black;
-    background-color: white;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .site-navigation a {
-    color: black;
+    color: #000000;
 }
 
 .site-navigation a:hover,
@@ -54,11 +69,12 @@ a {
 }
 
 .features {
-    background-color: white;
+    background-color: #ffffff;
 }
 
-.features-list, 
-.features-list ul {
+.list {
+    margin: 0px;
+    padding: 0px;
     list-style: none;
 }
 
@@ -70,52 +86,52 @@ a {
 .features h1 {
     text-align: center;
     font-size: 21px;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
+    color: #000000;
 }
 
 .index-columns {
     background-color: #81b3d2;
-    color: white;
+    color: #ffffff;
 }
 
 .index-columns h2 {
     font-size: 21px;
-    line-height: 21px;
+    line-height: 1;
 }
 
-.index-columns-1 {
+.index-columns-row {
     background-color: #eeeeee;
 }
 
-.index-columns-1 h2 {
-    color: black;
+.index-columns-row h2 {
+    color: #000000;
     font-size: 21px;
-    line-height: 21px;
+    line-height: 1;
 }
 
 .appointment {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .appointment p {
-    color: black;
+    color: #000000;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 1.2;
     text-align: center;
 }
 
 .appointment .appointment-info {
     color: #333333;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     text-align: center;
 } 
 
 .open-form {
     background-color: #766357;
     text-align: center;
-    color: white;
+    color: #ffffff;
     vertical-align: middle;
     border: none;
 }
@@ -137,30 +153,27 @@ a {
     border: none;
 }
 
-.appointment-date,
-.appointment-quantity {
+.appointment-field {
     font-size: 14px;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
+    color: #000000;
     text-transform: uppercase;
     background-color: #f2f2f2;
     border: none;
 }
 
-.appointment-date:hover,
-.appointment-quantity:hover {
+.appointment-field:hover {
     background-color: #ebebeb;
 }
 
-.appointment-date:focus,
-.appointment-quantity:focus {
+.appointment-field:focus {
     border: solid 2px #e5e5e5;
     background-color: #ffffff;
 }
 
 .button-setup {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     color: #a9a9a9;
     border: none;
     background-color: #f2f2f2;
@@ -176,7 +189,7 @@ a {
 
 .button-search {
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     color: #ffffff;
     background-color: #81b3d2;
@@ -193,12 +206,11 @@ a {
 }
 
 .footer-contacts {
-    color: black;
+    color: #000000;
 }
 
 .footer-contacts a {
-    text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .footer-social {
@@ -218,24 +230,21 @@ a {
     
 }
 
-.footer-social a:active .tw {
+.a-twitter:active .twitter {
     opacity: 0.3;
-    filter:alpha(opacity=30);
 }
 
-.footer-social a:active .fb {
+.a-facebook:active .facebook {
     opacity: 0.3;
-    filter:alpha(opacity=30);
 }
 
-.footer-social a:active .yt {
+.a-youtube:active .youtube {
     opacity: 0.3;
-    filter:alpha(opacity=30);
 }
 
 .footer-copyright {
-    font-size: 12px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 1.86;
     text-align: center;
     color: #000000;
 }
