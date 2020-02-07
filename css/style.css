@@ -166,6 +166,14 @@ a {
     background-color: #f2f2f2;
 }
 
+.button-setup:hover {
+    color: #000000;
+}
+
+.button-setup:active {
+    color: #81b3d2;
+}
+
 .button-search {
     font-size: 21px;
     font-weight: bold;
