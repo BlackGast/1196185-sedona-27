@@ -15,6 +15,12 @@ a {
     text-decoration: none;
 }
 
+.index {
+    background-image: url('../img/index-page-main-bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     
@@ -31,10 +37,29 @@ a {
     overflow: hidden;
 }   
 
-.index {
-    background-image: url('../img/background.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
+.list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.main-navigation {
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.link {
+    color: #000000;
+}
+
+.link:hover,
+.link:focus {
+    color: #81b3d2;
+}
+
+.link:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .mask {
@@ -49,33 +74,8 @@ a {
     margin-right: auto
 }
 
-.main-navigation {
-    font-weight: 700;
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.site-navigation a {
-    color: #000000;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-    color: #81b3d2;
-}
-
-.site-navigation a:active {
-    color: rgba(0, 0, 0, 0.3);
-}
-
 .features {
     background-color: #ffffff;
-}
-
-.list {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
 }
 
 .feature-item, 
@@ -95,7 +95,7 @@ a {
     color: #ffffff;
 }
 
-.index-columns h2 {
+.index-columns-text {
     font-size: 21px;
     line-height: 1;
     font-weight: bold;
@@ -105,7 +105,7 @@ a {
     background-color: #eeeeee;
 }
 
-.index-columns-row h2 {
+.index-columns-row-text {
     color: #000000;
     font-size: 21px;
     line-height: 1;
@@ -115,14 +115,15 @@ a {
     background-color: #ffffff;
 }
 
-.appointment p {
+.appointment-text {
     color: #000000;
     font-size: 30px;
+    font-weight: 700;
     line-height: 1.2;
     text-align: center;
 }
 
-.appointment .appointment-info {
+.appointment-info {
     color: #333333;
     font-size: 14px;
     line-height: 1.7;
@@ -211,35 +212,23 @@ a {
 }
 
 .footer-contacts a {
-    color: #000000;
+    color: inherit;
 }
 
-.footer-social {
-    list-style: none;
-}
-
-.footer-social a {
+.social-link {
     background-color: #81b3d2;
 }
 
-.footer-social a:hover {
+.social-link:hover {
     background-color: #669ec0;
 }
 
-.footer-social a:active {
+.social-link:active {
     background-color: #5496bd;
     
 }
 
-.a-twitter:active .twitter {
-    opacity: 0.3;
-}
-
-.a-facebook:active .facebook {
-    opacity: 0.3;
-}
-
-.a-youtube:active .youtube {
+.social-link:active .social-icon {
     opacity: 0.3;
 }
 
