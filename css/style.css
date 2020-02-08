@@ -98,6 +98,7 @@ a {
 .index-columns h2 {
     font-size: 21px;
     line-height: 1;
+    font-weight: bold;
 }
 
 .index-columns-row {
