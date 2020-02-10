@@ -21,6 +21,12 @@ a {
     background-repeat: no-repeat;
 }
 
+.catalog {
+    background-image: url('../img/catalog-page-main-bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     
