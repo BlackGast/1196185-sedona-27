@@ -15,6 +15,10 @@ a {
     text-decoration: none;
 }
 
+footer {
+    background-color: #ffffff;
+}
+
 .index {
     background-image: url('../img/index-page-main-bg.jpg');
     background-position: top center;
@@ -228,6 +232,9 @@ a {
 }
 
 .footer-contacts {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.24;
     color: #000000;
 }
 
@@ -279,4 +286,221 @@ a {
 
 .footer-copyright:active svg {
     fill: #bdbbbc;
+}
+
+/*Стили для внутренней страницы*/
+
+fieldset {
+    border: 0 none;
+}
+
+.legend {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    text-align: left;
+    color: #ffffff;
+}
+
+.check {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 40px;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    margin-left: -40px;
+    width: 27px;
+    height: 23px;
+    background-image: url('../img/checkbox-off.svg');
+    background-repeat: no-repeat;
+}
+
+.check__input:checked + .check__box {
+    background-image: url('../img/checkbox-on.svg');
+    background-repeat: no-repeat;
+}
+
+.range-text{
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    color:#ffffff;
+}
+
+.left {
+    border-right: 0;
+}
+.right {
+    border-left: 0;
+}
+
+.button-filter {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.button-filter:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+.range-button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.range{
+    -webkit-appearance: none;
+    width: 317px;
+    height: 2px;
+    margin-left: 25px;
+    background:linear-gradient(to right, #ffffff 0%, #ffffff 80%, rgba(255, 255, 255, 0.2), 80%, rgba(255, 255, 255, 0.2) 100%)
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width:28px;
+    height:30px;
+    margin-top: 9px;
+    cursor: pointer;
+    background: url('../img/filter-button.svg') no-repeat ;
+}
+
+
+.bold {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.24;
+    text-align: left;
+    color: #000000;
+}
+
+.filter-field {
+    background-color: #ffffff;
+}
+
+.filter {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+}
+
+.filter-list {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: #81b3d2;
+}
+
+.active {
+    color: #81b3d2;
+}
+
+.no-active {
+    border-bottom: 1px dotted #81b3d2;
+    color:rgba(0, 0, 0, 0.3)
+}
+
+.no-active:hover {
+    color: #81b3d2;
+}
+
+.no-active:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.icon-up,
+.icon-down {
+    fill: #cacaca;
+}
+
+.icon-up:hover,
+.icon-down:hover {
+    fill: #231F20;
+}
+
+.icon-up:active,
+.icon-down:active {
+    fill: #81b3d2;
+}
+
+.active-arrow {
+    fill: #81b3d2;
+}
+
+.catalog-list {
+    background-color: #ffffff;
+}
+
+.hotel-price {
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: left;
+    color: #333333;
+}
+
+.button-more {
+    font-weight: 700;
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.button-more:hover {
+    background-color: #669ec0;
+}
+
+.button-more:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
+.button-book {
+    font-weight: 700;
+    background-color: #766357;
+    color: #ffffff;
+}
+
+.button-book:hover {
+    background-color: #604e43;
+}
+
+.button-book:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.rating {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #666666;
+    background-color: #f2f2f2;
 }
