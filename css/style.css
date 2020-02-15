@@ -291,7 +291,7 @@ footer {
 /*Стили для внутренней страницы*/
 
 fieldset {
-    border: 0 none;
+    border: 0;
 }
 
 .legend {
@@ -302,7 +302,7 @@ fieldset {
     color: #ffffff;
 }
 
-.check {
+.checkbox-wrapper {
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
@@ -310,14 +310,14 @@ fieldset {
     padding-left: 40px;
 }
 
-.check__input {
+.checkbox {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.check__box {
+.checkbox-icon {
     position: absolute;
     margin-left: -40px;
     width: 27px;
@@ -326,18 +326,21 @@ fieldset {
     background-repeat: no-repeat;
 }
 
-.check__input:checked + .check__box {
+.checkbox:checked + .checkbox-icon {
     background-image: url('../img/checkbox-on.svg');
     background-repeat: no-repeat;
 }
 
-.range-text{
+.checkbox:focus {
+    border: 5px solid #000000;
+}
+
+.range-text {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;
-    outline: none;
     border: 2px solid #ffffff;
     border-radius: 3px;
     color:#ffffff;
@@ -355,7 +358,6 @@ fieldset {
     line-height: 1.5;
     text-align: center;
     background-color: transparent;
-    outline: none;
     border: 2px solid #ffffff;
     border-radius: 3px;
     color: #ffffff;
@@ -369,7 +371,6 @@ fieldset {
 }
 
 .range-button {
-    outline: none;
     border: 0;
     background: transparent;
     cursor: pointer;
@@ -437,22 +438,22 @@ fieldset {
     border-bottom: none;
 }
 
-.icon-up,
-.icon-down {
+.arrow-up,
+.arrow-down {
     fill: #cacaca;
 }
 
-.icon-up:hover,
-.icon-down:hover {
+.arrow-up:hover,
+.arrow-down:hover {
     fill: #231F20;
 }
 
-.icon-up:active,
-.icon-down:active {
+.arrow-up:active,
+.arrow-down:active {
     fill: #81b3d2;
 }
 
-.active-arrow {
+.active-arrows {
     fill: #81b3d2;
 }
 
