@@ -23,7 +23,7 @@
             <a class="link" href="#">Карта штата</a>
           </li>
           <li>
-            <a class="link" href="catalog.html">Гостиницы</a>
+            <a class="active-link-navigation" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -76,9 +76,13 @@
             <input class="range-text left" type="text" name="cost-min" id="cost-min" value="От 0">
             <input class="range-text right" type="text" name="cost-max" id="cost-max" value="До 3000">
             <button class="range-button" type="button">
-              <img src="img/filter-button.svg" width="20" height="22" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 23">
+                <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/>
+                <circle fill="#FFF" cx="10" cy="10" r="10"/>
+                <circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+              </svg>
             </button>
-            <input class="range" type="range" name="cost" id="cost" min="0" max="3500" step="100" value="3000">
+            <input class="range appearance" type="range" name="cost" id="cost" min="0" max="3500" step="100" value="3000">
           </fieldset>
           <button class="button-filter" type="submit">Показать</button> 
         </form>

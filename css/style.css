@@ -15,6 +15,12 @@ a {
     text-decoration: none;
 }
 
+.appearance {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 footer {
     background-color: #ffffff;
 }
@@ -70,6 +76,10 @@ footer {
 
 .link:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.active-link-navigation {
+    color: #766357;
 }
 
 .mask {
@@ -310,29 +320,37 @@ fieldset {
     padding-left: 40px;
 }
 
-.checkbox {
+.checkbox:not(checked) {
     position: absolute;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    opacity: 0;
 }
 
-.checkbox-icon {
+.checkbox:not(checked) + .checkbox-icon,
+.checkbox:checked + .checkbox-icon {
+    padding-left: 38px;
+    cursor: pointer;
+}
+
+.checkbox:not(checked) + .checkbox-icon::before {
+    background: url("../img/checkbox-off.svg") no-repeat;
+    content: '';
     position: absolute;
     margin-left: -40px;
     width: 27px;
     height: 23px;
-    background-image: url('../img/checkbox-off.svg');
-    background-repeat: no-repeat;
 }
 
-.checkbox:checked + .checkbox-icon {
-    background-image: url('../img/checkbox-on.svg');
-    background-repeat: no-repeat;
+.checkbox:checked + .checkbox-icon::before {
+    background: url("../img/checkbox-on.svg") no-repeat;
+    content: '';
+    position: absolute;
+    margin-left: -40px;
+    width: 27px;
+    height: 23px;
 }
 
-.checkbox:focus {
-    border: 5px solid #000000;
+.checkbox:focus + .checkbox-icon::before {
+    outline: 1px solid rgb(77, 144, 254); 
 }
 
 .range-text {
@@ -372,12 +390,18 @@ fieldset {
 
 .range-button {
     border: 0;
-    background: transparent;
+    background-color: transparent;
     cursor: pointer;
+    width:32px;
+    height:34px;
+}
+
+.range-button:hover {
+    width:34px;
+    height:36px;
 }
 
 .range{
-    -webkit-appearance: none;
     width: 317px;
     height: 2px;
     margin-left: 25px;
@@ -385,15 +409,18 @@ fieldset {
 }
 
 .range::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    -webkit-appearance: inherit;
     width:28px;
     height:30px;
     margin-top: 9px;
     cursor: pointer;
-    background: url('../img/filter-button.svg') no-repeat ;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='24' viewBox='0 0 20 23'%3E%3Cpath opacity='.3' fill='%23ABABAB' d='M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z'/%3E%3Ccircle fill='%23FFF' cx='10' cy='10' r='10'/%3E%3Ccircle fill='%23ABABAB' cx='10' cy='10' r='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat ;
 }
 
-
+.range::-webkit-slider-thumb:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='26' viewBox='0 0 20 23'%3E%3Cpath opacity='.3' fill='%23ABABAB' d='M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z'/%3E%3Ccircle fill='%23FFF' cx='10' cy='10' r='10'/%3E%3Ccircle fill='%23ABABAB' cx='10' cy='10' r='2'/%3E%3C/svg%3E");
+}
 .bold {
     font-size: 21px;
     font-weight: 700;
