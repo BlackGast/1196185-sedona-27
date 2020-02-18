@@ -21,7 +21,7 @@ a {
     appearance: none;
 }
 
-footer {
+.main-footer {
     background-color: #ffffff;
 }
 
@@ -300,7 +300,8 @@ footer {
 
 /*Стили для внутренней страницы*/
 
-fieldset {
+.checkbox-form,
+.range-form {
     border: 0;
 }
 
