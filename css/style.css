@@ -354,14 +354,19 @@ a {
     outline: 1px solid rgb(77, 144, 254); 
 }
 
+.range-text-container {
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+
+}
+
 .range-text {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 3px;
+    border: 0;
     color:#ffffff;
 }
 
