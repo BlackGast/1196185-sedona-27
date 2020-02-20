@@ -538,3 +538,65 @@ a {
     color: #666666;
     background-color: #f2f2f2;
 }
+
+/* Сеточные стили для главной станицы */
+
+.index {
+    width: 1200px;
+    position: relative;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header {
+    position: relative;
+    width: 1200px;
+    
+    
+    margin-bottom: 76px;
+    /*временно для сетки*/
+}
+
+.main-navigation {
+    width: 100%;
+    position: absolute;
+    max-height: 56px;
+    
+    list-style: none;
+
+}
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
+    z-index: 2;
+}
+
+.main-navigation-wrapper {
+    height: 56px;
+    background-color: #ffffff;
+}
+
+.container-header {
+    position: absolute;
+    width: 100%;
+    
+    margin: 0 auto;
+    height: 56px;
+}
+
+.site-navigation {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    padding-top: 15px;
+}
+
+/*.site-navigation .link {
+
+}
+*/
