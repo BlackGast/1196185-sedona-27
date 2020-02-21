@@ -103,10 +103,11 @@ a {
     text-align: center;
 }
 
-.features h1 {
+.headline {
     text-align: center;
     font-size: 21px;
     font-weight: 700;
+    line-height: 1.24;
     color: #000000;
 }
 
@@ -119,6 +120,11 @@ a {
     font-size: 21px;
     line-height: 1;
     font-weight: 700;
+}
+
+.upper-text-list h3 {
+    font-size: 21px;
+    line-height: 1;
 }
 
 .index-columns-row {
@@ -149,6 +155,9 @@ a {
 } 
 
 .open-form {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.24;
     background-color: #766357;
     text-align: center;
     color: #ffffff;
@@ -542,25 +551,24 @@ a {
 /* Сеточные стили для главной станицы */
 
 .index {
-    width: 1200px;
     position: relative;
+    width: 1200px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* сеточные стили для хедера */
+
 .main-header {
     position: relative;
     width: 1200px;
-    
-    
     margin-bottom: 76px;
-    /*временно для сетки*/
 }
 
 .main-navigation {
-    width: 100%;
     position: absolute;
+    width: 100%;
     max-height: 56px;
     
     list-style: none;
@@ -591,12 +599,179 @@ a {
 .site-navigation {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 1200px;
-    padding-top: 15px;
+    padding-top: 14px;
 }
 
-/*.site-navigation .link {
-
+.site-navigation li:first-child {
+    padding-left: 73px;
 }
-*/
+
+.site-navigation li:nth-child(2) {
+    padding-right: 239px;
+}
+
+.site-navigation li:nth-child(3) {
+    padding-right: 20px;
+}
+
+.site-navigation li:last-child {
+    padding-right: 70px;
+    
+}
+
+/* сеточные стили для main */
+
+.logo {
+    margin-bottom: 79px;
+}
+
+.mask {
+    position: absolute;
+    top: 507px;
+}
+
+.about {
+    text-align: center;
+    padding-top: 59px;
+    padding-right: 72px;
+    padding-bottom: 50px;
+    padding-left: 72px;
+}
+
+.about-info {
+    max-width: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-info p {
+    margin: 0;
+}
+
+.headline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.index-columns-text {
+    margin: 0;
+}
+
+.features-list li:first-child {
+    position: relative;
+    
+    width: 1200px;
+}
+
+.upper-text {
+    position: relative;
+    display:flex;
+    margin-bottom: 60px;
+}
+
+.upper-text .index-columns-container {
+    max-width: 400px;
+    padding-top: 46px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.index-columns-container .index-columns-text {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 23px;
+}
+
+.index-columns-container p {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.upper-text-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 61px;
+}
+
+.upper-text-list li {
+    max-width: 400px;
+    max-height: 330px;
+}
+
+.upper-text-list li:last-child {
+    margin-top: -5px;
+}
+
+.upper-text-list p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.lower-text {
+    position: relative;
+    display:flex;
+}
+
+.lower-text .index-columns-container {
+    max-width: 400px;
+    padding-top: 46px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.lower-text p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.columns-row {
+    position: relative;
+    display:flex;
+    text-align: center;
+}
+
+.index-columns-row {
+    width: 400px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+.index-columns-row-text {
+    margin-top: 0;
+    margin-left: 120px;
+    margin-right:120px;
+    margin-bottom: 15px;
+}
+
+.index-columns-row p {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.appointment {
+    padding-top: 50px;
+}
+
+.appointment-text {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.appointment-info {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    width: 460px;
+}
+
+.open-form {
+    width: 568px;
+    height: 86px;
+    margin-right: 319px;
+    margin-left: 319px;
+}
