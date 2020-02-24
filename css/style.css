@@ -29,6 +29,7 @@ a {
     background-image: url('../img/index-page-main-bg.jpg');
     background-position: top center;
     background-repeat: no-repeat;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .catalog {
@@ -133,6 +134,7 @@ a {
 
 .index-columns-row-text {
     color: #000000;
+    line-height: 1;
 }
 
 .appointment {
@@ -158,6 +160,7 @@ a {
     font-size: 21px;
     font-weight: 700;
     line-height: 1.24;
+    text-transform: inherit;
     background-color: #766357;
     text-align: center;
     color: #ffffff;
@@ -172,6 +175,10 @@ a {
 .open-form:active {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.appointment-date-text {
+    font-weight: 700;
 }
 
 .date {
@@ -201,8 +208,6 @@ a {
 }
 
 .button-calendar {
-    font-size: 20px;
-    font-weight: 700;
     fill: #a9a9a9;
     border: none;
     background-color: #f2f2f2;
@@ -597,7 +602,7 @@ a {
 }
 
 .site-navigation {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 1200px;
@@ -653,22 +658,25 @@ a {
 
 .headline {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .index-columns-text {
     margin: 0;
 }
 
+.features-list li:nth-child(2) {
+    margin-top: 10px;
+}
+
 .features-list li:first-child {
     position: relative;
-    
     width: 1200px;
 }
 
 .upper-text {
     position: relative;
-    display:flex;
+    display: flex;
     margin-bottom: 60px;
 }
 
@@ -677,6 +685,11 @@ a {
     padding-top: 46px;
     padding-right: 60px;
     padding-left: 60px;
+}
+
+
+.index-columns-container {
+    width: 400px;
 }
 
 .index-columns-container .index-columns-text {
@@ -709,11 +722,12 @@ a {
 .upper-text-list p {
     margin-left: 50px;
     margin-right: 50px;
+    line-height: 1.5;
 }
 
 .lower-text {
     position: relative;
-    display:flex;
+    display: flex;
 }
 
 .lower-text .index-columns-container {
@@ -730,7 +744,7 @@ a {
 
 .columns-row {
     position: relative;
-    display:flex;
+    display: flex;
     text-align: center;
 }
 
@@ -743,8 +757,8 @@ a {
 .index-columns-row-text {
     margin-top: 0;
     margin-left: 120px;
-    margin-right:120px;
-    margin-bottom: 15px;
+    margin-right: 120px;
+    margin-bottom: 20px;
 }
 
 .index-columns-row p {
@@ -754,6 +768,7 @@ a {
 
 .appointment {
     padding-top: 50px;
+    height: 241px;
 }
 
 .appointment-text {
@@ -772,6 +787,229 @@ a {
 .open-form {
     width: 568px;
     height: 86px;
+    padding: 0;
+    margin-top: 49px;
     margin-right: 319px;
     margin-left: 319px;
+    font-family: inherit;
+
+}
+
+.index-form {
+    width: 568px;
+    height: 285px;
+    margin-right: 319px;
+    margin-left: 319px;
+}
+
+.appointment-form {
+    position: absolute;
+    margin: 0;
+    padding: 55px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.date {
+    padding: 0;
+    margin: 0;
+}
+
+.row-line {
+    display: flex;
+    width: 458px;
+    height: 28px;
+    margin-bottom: 39px;
+}
+
+.appointment-date-text {
+    width: 112px;
+    padding-top: 6px;
+    
+    padding-bottom: 6px;
+}
+
+.appointment-date {
+    width: 285px;
+    height: 26px;
+    padding-top: 6px;
+    padding-left: 11px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.button-calendar {
+    height: 22px;
+    padding-top: 7px;
+    padding-left: 0;
+    padding-bottom: 31px;
+    padding-right: 7px;
+}
+
+.appointment-quantity::-webkit-outer-spin-button,
+.appointment-quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity {
+    margin: 0;
+    padding: 0;
+}
+
+.quantity-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.appointment-quantity {
+    width: 44px;
+    height: 26px;
+    padding-top: 6px;
+    padding-right: 0;
+    padding-bottom: 6px;
+    padding-left: 0;
+    text-align: center;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.appointment-quantity-text {
+    font-weight: 700;
+}
+
+.button-setup {
+    font-size: 16;
+    width: 38px;
+    height: 38px;
+}
+
+.adults-form {
+    display: flex;
+    width: 226px;
+    margin: 0;
+}
+
+.adults {
+    width: 112px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 0;
+}
+
+.child-form {
+    display: flex;
+    width: 226px;
+    margin-right: -10px;
+}
+
+.child {
+    width: 38px;
+    padding-top: 6px;
+    padding-right: 15px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    margin-right: 12px;
+    margin-left: 40px;
+}
+
+.button-search {
+    font-family: inherit;
+    text-transform: uppercase;
+    margin-top: 55px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.map {
+    height: 473px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 137px;
+    padding-right: 99px;
+}
+
+.footer-contacts {
+    margin: 0;
+    width: 250px;
+}
+
+.contacts {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.hashtag {
+    margin-top: 0;
+}
+
+.footer-social {
+    display: flex;
+    margin: 0;
+    padding-top: 5px;
+    padding-right: 88px;
+    padding-bottom: 0;
+    padding-left: 0;
+    justify-content: center;
+
+}
+
+.social-link {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 48px;
+}
+
+.footer-social li {
+    margin-right: 6px;
+}
+
+.footer-social li:last-child {
+    margin: 0;
+    
+}
+
+.twitter-icon {
+    margin-top: 16px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.facebook-icon {
+    margin-top: 13px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.youtube-icon {
+    margin-top: 16px;
+    margin-right: 15px;
+    margin-left: 13px;
+}
+
+.footer-copyright {
+    display: flex;
+    padding-top: 6px;
+
+}
+
+.footer-copyright p {
+    margin-right: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 8px;
 }
