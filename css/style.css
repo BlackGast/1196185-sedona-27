@@ -33,9 +33,16 @@ a {
 }
 
 .catalog {
+    
+    position: relative;
+    width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url('../img/catalog-page-main-bg.jpg');
-    background-position: top center;
+    background-position: 50% -240px;
     background-repeat: no-repeat;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -317,7 +324,10 @@ a {
 .checkbox-form,
 .range-form {
     border: 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 .legend {
     font-size: 16px;
@@ -332,7 +342,8 @@ a {
     line-height: 1.5;
     text-align: left;
     color: #ffffff;
-    padding-left: 40px;
+    margin-left: 4px;
+    margin-top: 25px;
 }
 
 .checkbox:not(checked) {
@@ -569,6 +580,10 @@ a {
     position: relative;
     width: 1200px;
     margin-bottom: 76px;
+}
+
+.inner-header {
+    margin-bottom: 27px;
 }
 
 .main-navigation {
@@ -1012,4 +1027,86 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 8px;
+}
+
+/* сеточные стили для страницы каталога */
+
+.form-filter {
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.checkbox-form {
+    display: flex;
+}
+
+.form-one {
+    margin-left: 72px;
+}
+
+.form-two {
+    margin-left: 115px;
+}
+
+.cost {
+    margin-left: 348px;
+}
+
+.legend-cost {
+    margin-bottom: 12px;
+}
+
+.range-text-container {
+    width: 314px;
+    height: 32px;
+}
+
+.range-text {
+    width: 155px;
+    padding: 0px;
+}
+
+.filter-field {
+    display: flex;
+}
+
+.find {
+    margin-top: 31px;
+    margin-left: 72px;
+}
+
+.filter {
+    margin-top: 37px;
+    margin-left: 48px;
+}
+
+.no-active {
+    margin-left: 33px;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 37px;
+    margin-left: 41px;
+}
+
+.catalog-list li {
+    display: flex;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-arrows {
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+    margin-left: 504px;
+} 
+
+.arrow-up {
+    margin-right: 12px;
 }
